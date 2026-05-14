@@ -1,0 +1,85 @@
+{
+  "name": "wenderhost/lewisburgwater-bedrock-site",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
+  "homepage": "https://github.com/WenderHost/lewisburgwater-bedrock-site",
+  "authors": [
+    {
+      "name": "Michael Wender",
+      "email": "mwender@wenmarkdigital.com",
+      "homepage": "https://mwender.com"
+    }
+  ],
+  "keywords": ["bedrock", "composer", "roots", "wordpress", "wp", "wp-config"],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "repositories": {
+    "0": {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    "1": {
+      "type": "composer",
+      "url": "https://packages.wenmarkdigital.com/satispress/",
+      "only": ["wenmark/*"]
+    },
+    "2": {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^2.2",
+    "vlucas/phpdotenv": "^5.5",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "^6",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "wpengine/advanced-custom-fields-pro": "^6.2",
+    "wpackagist-plugin/cimo-image-optimizer": "^1.1",
+    "wpackagist-plugin/download-monitor": "*",
+    "wpackagist-plugin/elementor": "^3",
+    "wenmark/elementor-pro": "^3",
+    "wenmark/gravityforms": "^2",
+    "wenmark/ithemes-security-pro": "^8",
+    "wpackagist-plugin/pojo-accessibility": "^4.0",
+    "wpackagist-plugin/redirection": "^5.3",
+    "wpackagist-plugin/simple-page-ordering": "^2.6",
+    "wpackagist-plugin/spinupwp": "^1.5",
+    "wenmark/wpcodebox2": "*",
+    "wpackagist-theme/hello-elementor": "^3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  }
+}
