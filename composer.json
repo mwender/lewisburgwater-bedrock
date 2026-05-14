@@ -30,6 +30,10 @@
     "2": {
       "type": "composer",
       "url": "https://connect.advancedcustomfields.com"
+    },
+    "3": {
+      "type": "vcs",
+      "url": "https://github.com/msrbuilds/elementor-mcp"
     }
   },
   "require": {
@@ -55,7 +59,8 @@
     "wpackagist-plugin/spinupwp": "^1.5",
     "lukasbesch/bedrock-plugin-disabler": "^1.5",
     "wenmark/wpcodebox2": "*",
-    "wpackagist-theme/hello-elementor": "^3"
+    "wpackagist-theme/hello-elementor": "^3",
+    "wordpress/mcp-adapter": "^0.5.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"

@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "lewisburgwater-wp": {
+      "type": "stdio",
+      "command": "wp",
+      "args": [
+        "mcp-adapter",
+        "serve",
+        "--server=mcp-adapter-default-server",
+        "--user=mwender",
+        "--path=/Users/mwender/webdev/laravel-valet/bedrock/lewisburgwater.org/web/wp"
+      ]
+    },
+    "lewisburgwater-elementor": {
+      "type": "stdio",
+      "command": "wp",
+      "args": [
+        "mcp-adapter",
+        "serve",
+        "--server=elementor-mcp-server",
+        "--user=mwender",
+        "--path=/Users/mwender/webdev/laravel-valet/bedrock/lewisburgwater.org/web/wp"
+      ]
+    }
+  }
+}
