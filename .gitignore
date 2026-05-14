@@ -12,6 +12,9 @@ web/app/updraft/
 sql/
 auth.json
 
+# Local work directory (scripts, context docs, scratch files)
+bin/
+
 # Old standard WP install (pre-migration)
 public/
 public-backup/
