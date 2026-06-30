@@ -60,7 +60,8 @@
     "lukasbesch/bedrock-plugin-disabler": "^1.5",
     "wenmark/wpcodebox2": "*",
     "wpackagist-theme/hello-elementor": "^3",
-    "wordpress/mcp-adapter": "^0.5.0"
+    "wordpress/mcp-adapter": "^0.5.0",
+    "wpackagist-plugin/wpsimpletools-disable-comments": "^1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28a6eeaf252ddcae2f30ac52b7673aa1",
+    "content-hash": "03c5b2e058c8184814743e003c9fc6a4",
     "packages": [
         {
             "name": "composer/installers",
@@ -1501,6 +1501,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/spinupwp/"
+        },
+        {
+            "name": "wpackagist-plugin/wpsimpletools-disable-comments",
+            "version": "1.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpsimpletools-disable-comments/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpsimpletools-disable-comments.zip?timestamp=1618404771"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpsimpletools-disable-comments/"
         },
         {
             "name": "wpackagist-theme/hello-elementor",
