@@ -1396,15 +1396,15 @@
         },
         {
             "name": "wpackagist-plugin/download-monitor",
-            "version": "5.1.14",
+            "version": "5.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/download-monitor/",
-                "reference": "tags/5.1.14"
+                "reference": "tags/5.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/download-monitor.5.1.14.zip"
+                "url": "https://downloads.wordpress.org/plugin/download-monitor.5.2.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
