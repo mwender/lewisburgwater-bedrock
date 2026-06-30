@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03c5b2e058c8184814743e003c9fc6a4",
+    "content-hash": "666417d1b8ad5c15c05cac45cd3b9d45",
     "packages": [
         {
             "name": "composer/installers",
@@ -1208,11 +1208,11 @@
         },
         {
             "name": "wenmark/ithemes-security-pro",
-            "version": "8.6.0",
+            "version": "9.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://packages.wenmarkdigital.com/satispress/ithemes-security-pro/8.6.0",
-                "shasum": "c87a1db62fd62d0a719e04ea405650660bc07b72"
+                "url": "https://packages.wenmarkdigital.com/satispress/ithemes-security-pro/9.0.4",
+                "shasum": "c7c44868b2ca9ad80c1aac8efe1b20ab7b266b71"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
