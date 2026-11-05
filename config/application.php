@@ -157,6 +157,22 @@ Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
 Config::define('CONCATENATE_SCRIPTS', false);
 
 /**
+ * SMTP2GO
+ * The plugin only reads SMTP2GO_API_KEY / SMTP2GO_API_REGION when
+ * SMTP2GO_USE_CONSTANTS is true, and treats any defined constant (even null)
+ * as set, so only define each one when its .env value is present.
+ * Region: '' (global), 'us', 'eu' or 'au'.
+ */
+if (env('SMTP2GO_API_KEY')) {
+    Config::define('SMTP2GO_USE_CONSTANTS', true);
+    Config::define('SMTP2GO_API_KEY', env('SMTP2GO_API_KEY'));
+
+    if (env('SMTP2GO_API_REGION') !== null) {
+        Config::define('SMTP2GO_API_REGION', env('SMTP2GO_API_REGION'));
+    }
+}
+
+/**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
